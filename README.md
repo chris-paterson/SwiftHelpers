@@ -21,3 +21,12 @@ Create a UIColor without having to divide by 255 each time.
 UIColor.rgb(red: 255, green: 0, blue: 128, alpha: 0.5)
 UIColor.rgb(red: 255, green: 0, blue: 128) // defaults to 1
 ```
+
+### UIView
+#### addConstraintsWithFormat(format: String, views: UIView...)
+
+Provide a shorthand for adding constraints.
+
+```
+containerView.addConstraintsWithFormat(format: "V:|[v0][v1]|", views: nameLabel, messageLabel)
+```
